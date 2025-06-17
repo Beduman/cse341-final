@@ -2,14 +2,14 @@ const swaggerAutogen = require("swagger-autogen")();
 const dotenv = require("dotenv");
 dotenv.config();
 
-const isDev = process.env.NODE_ENV === "development";
+
 const doc = {
   info: {
     title: "aoe-2-api",
     description: "API for cataloging game stats for Age of Empires",
   },
-  host: isDev ? "localhost:3000" : "testaoe2api.onrender.com",
-  schemes: isDev? "http" : "https",
+    host: 'testaoe2api.onrender.com',
+    schemes: ['https', 'http']
 };
 
 const outputFile = "./swagger.json";
