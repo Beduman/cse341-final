@@ -8,7 +8,7 @@ const doc = {
     title: "aoe-2-api",
     description: "API for cataloging game stats for Age of Empires",
   },
-  host: isDev ? "localhost:3000" : "aoe2api.onrender.com",
+  host: isDev ? "localhost:3000" : "testaoe2api.onrender.com",
   schemes: isDev? "http" : "https",
 };
 
