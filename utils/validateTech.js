@@ -17,10 +17,10 @@ const validateTech = [
     .isString()
     .notEmpty()
     .withMessage("Imperial tech must be a non-empty string"),
-  body("inpTechCost")
+  body("impTechCost")
     .isInt()
     .notEmpty()
-    .withMessage("Unique unit must be a non-empty integer"),
+    .withMessage("Imperial tech cost must be a non-empty integer"),
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
